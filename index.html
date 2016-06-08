@@ -8,6 +8,7 @@
 	<meta name="robots" content="all" />
 	<meta name="MSSmartTagsPreventParsing" content="true" />
 	<meta http-equiv="imagetoolbar" content="false" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
 	<style>
 		* { margin: 0; }
 		body { color: #fff; background-color: #28343b; font-family: "brandon-grotesque", Helvetica, Arial, sans;  padding: 50px; -webkit-font-smoothing: antialiased; }
@@ -15,16 +16,12 @@
 		h2 { font-size: 25px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; }
 		p { font-size: 18px; line-height: 28px; margin-bottom: 22px;  }	
 		a { color: #fff; font-weight: normal; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-		ol { margin: 0 0 20px 0; padding: 0; font-size: 20px; line-height: 28px; }
+		ul { margin: 0 0 20px 20px; padding: 0; font-size: 20px; line-height: 28px; }
 		li { margin-bottom: 10px; }
-		a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
-		a.download { color: #ff9; }
-		#main { width: 646px; margin: 0px auto 0 auto; }
-		.show-mobile { display: none; }
-		.small { font-size: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
-		.small a { font-weight: bold; }
-		
 		img { width: 100%; height: 300px;}
+		a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
+
+		#main { width: 646px; margin: 0px auto 0 auto; }
 
 		.slideshow-container {
   			width: 100%;
@@ -41,7 +38,7 @@
   			margin-top: -22px;
   			padding: 16px;
   			transition: 0.6s ease;
-  			background: url(images/left.png);
+  			background: url(left.png);
     		background-size: 100% 100%;
     		background-repeat: no-repeat;
   			border: 0;
@@ -49,7 +46,7 @@
 
 		.next {
   			right: 0;
-  			background: url(images/right.png);
+  			background: url(right.png);
     		background-size: 100% 100%;
     		background-repeat: no-repeat;
 		}
@@ -118,12 +115,12 @@
 
 <div class="slideshow-container">
 <div class="mySlides fade">
-  <img src="images/1.jpg">
+  <img src="1.jpg">
   <div class="text">New <a href="http://arxiv.org/abs/1605.07784">paper</a> on solving robust PCA and matrix completion by non-convex gradient descent.</div>
 </div>
 
 <div class="mySlides fade">
-  <img src="images/3.jpg">
+  <img src="3.jpg">
 </div>
 
 <a class="prev" onclick="plusSlides(-1)"></a>
@@ -137,7 +134,7 @@
   <span class="dot" onclick="currentSlide(2)"></span> 
 </div>
 
-<h2> About</h2>
+<h2>About</h2>
 <p style="text-align: justify;">I am a 4th year PhD student in Department of Electrical and Computer Engineering (ECE) at <a href="http://www.utexas.edu/">The University of Texas at Austin</a>. I am advised by <a href="http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html">Constantine Caramanis</a>. I obtained my B.E. from <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html">Tsinghua University</a> in 2012. I have spent two summers as an intern at Google, where I made contributions to Google's recommendation and ads systems.</p>
 <p style="text-align: justify;">My research interests include machine learning, high-dimensional statistics, convex and non-convex optimization. I particularly enjoy developing tractable non-convex algorithms for large scale learning problems.</p>
 
@@ -147,21 +144,21 @@
 <ul>
 	<li><p><span style="font-weight: bold;">Fast Algorithms for Robust PCA via Gradient Descent,</span><br>Xinyang Yi, Dohyung Park, Yudong Chen, Constantine Caramanis.<br>
 	Preprint, 2016. <a href="http://arxiv.org/abs/1605.07784">[arxiv]</a>
-	<a href="code/RPCA_GD.zip">[code]</a></p>
+	<a href="rpca_gd/RPCA_GD.zip">[code]</a></p>
 	</li>
 
 	<li><p><span style="font-weight: bold;">Regularized EM Algorithms: A Unified Framework and Statistical Guarantees,</span><br>Xinyang Yi, Constantine Caramanis.<br>
-	Neural Information Processing Systems Conference (NIPS), 2015.<br><a href="http://arxiv.org/abs/1511.08551">[arxiv]</a>
+	Neural Information Processing Systems Conference (NIPS), 2015. <a href="http://arxiv.org/abs/1511.08551">[arxiv]</a>
 	<a href="https://papers.nips.cc/paper/5720-regularized-em-algorithms-a-unified-framework-and-statistical-guarantees">[nips link]</a></p>
 	</li>
 
 	<li><p><span style="font-weight: bold;">Optimal Linear Estimation under Unknown Nonlinear Transform,</span><br>Xinyang Yi, Zhaoran Wang, Constantine Caramanis, Han Liu.<br>
-	Neural Information Processing Systems Conference (NIPS), 2015.<br><a href="http://arxiv.org/abs/1505.03257">[arxiv]</a>
+	Neural Information Processing Systems Conference (NIPS), 2015. <a href="http://arxiv.org/abs/1505.03257">[arxiv]</a>
 	<a href="https://papers.nips.cc/paper/6013-optimal-linear-estimation-under-unknown-nonlinear-transform">[nips link]</a></p>
 	</li>
 
 	<li><p><span style="font-weight: bold;">Binary Embedding: Fundamental Limits and Fast Algorithm,</span><br>Xinyang Yi, Constantine Caramanis, Eric Price.<br>
-	International Conference on Machine Learning (ICML), 2015.<br><a href="http://arxiv.org/abs/1502.05746">[arxiv]</a>
+	International Conference on Machine Learning (ICML), 2015. <a href="http://arxiv.org/abs/1502.05746">[arxiv]</a>
 	<a href="http://www.jmlr.org/proceedings/papers/v37/yi15.html">[icml link]</a></p>
 	</li>
 
@@ -178,7 +175,7 @@
 
 	<li><p><span style="font-weight: bold;">Alternating Minimization for Mixed Linear Regression</span>,<br>
 	Xinyang Yi, Constantine Caramanis, Sujay Sanghavi.<br>
-	International Conference on Machine Learning (ICML), 2014.<br><a href="http://arxiv.org/abs/1310.3745">[arxiv]</a> <a href="http://jmlr.org/proceedings/papers/v32/yia14.html">[icml link]</a></p>	
+	International Conference on Machine Learning (ICML), 2014. <a href="http://arxiv.org/abs/1310.3745">[arxiv]</a> <a href="http://jmlr.org/proceedings/papers/v32/yia14.html">[icml link]</a></p>	
 </ul>
 
 <hr>
