@@ -1,6 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Xinyang Yi's Homepage</title>
+	
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="robots" content="all" />
+	<meta name="MSSmartTagsPreventParsing" content="true" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+		* { margin: 0; }
+		body { color: #fff; background-color: #28343b; font-family: "brandon-grotesque", Helvetica, Arial, sans;  padding: 50px; -webkit-font-smoothing: antialiased; }
+		h1 { font-size: 30px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; }
+		h2 { font-size: 25px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px; }
+		p { font-size: 18px; line-height: 28px; margin-bottom: 22px;  }	
+		a { color: #fff; font-weight: normal; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
+		ol { margin: 0 0 20px 0; padding: 0; font-size: 20px; line-height: 28px; }
+		li { margin-bottom: 10px; }
+		a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
+		a.download { color: #ff9; }
+		#main { width: 646px; margin: 0px auto 0 auto; }
+		.show-mobile { display: none; }
+		.small { font-size: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+		.small a { font-weight: bold; }
+		@media (max-width: 646px) {
+			#main { position: relative; width: auto; padding: 20px; margin: 0 !important; }
+			.show-desktop { display: none; }
+			.show-mobile { display: block; }
+		}
+		@media (max-width: 480px) {
+			body { padding: 20px; }
+		}
+
+		img { width: 100%; height: 250px;}
+
+		.slideshow-container {
+  			width: 100%;
+  			position: relative;
+  			margin: auto;
+		}
+
+		.prev, .next {
+  			cursor: pointer;
+  			position: absolute;
+  			top: 50%;
+  			height: 10px;
+  			width: 10px;
+  			margin-top: -22px;
+  			padding: 16px;
+  			transition: 0.6s ease;
+  			background: url(left.png);
+    		background-size: 100% 100%;
+    		background-repeat: no-repeat;
+  			border: 0;
+		}
+
+		.next {
+  			right: 0;
+  			background: url(right.png);
+    		background-size: 100% 100%;
+    		background-repeat: no-repeat;
+		}
+
+		.prev:hover, .next:hover {
+  			background-color: rgba(0,0,0,0.7);
+  			border: 0;
+		}
+
+		.text {
+  			color: #f2f2f2;
+  			font-size: 17px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			right: 0;
+  			left: 0;
+  			bottom: 4px;
+  			text-align: left;
+  			background-color: rgba(0,0,0,0.3);
+		}
+
+		.text:hover{
+  			background-color: rgba(0,0,0,0.7);
+		}
+
+		.dot {
+  			cursor:pointer;
+  			height: 9px;
+  			width: 9px;
+  			margin: 0 2px;
+  			background-color: #bbb;
+  			border-radius: 50%;
+  			display: inline-block;
+  			border-color: blue;
+  			border: 2px;
+  			transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+  			background-color: #717171;
+		}
+
+		.fade {
+  			-webkit-animation-name: fade;
+  			-webkit-animation-duration: 1.5s;
+  			animation-name: fade;
+  			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+  			from {opacity: .4} 
+  			to {opacity: 1}
+		}
+
+		@keyframes fade {
+  			from {opacity: .4} 
+  			to {opacity: 1}
+		}
+	</style>
+</head>	
+   
+
 <body>
-<h1>Under construction...</h1>
-</body>
+<div id="main">
+<h1>Xinyang Yi</h1>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="1.jpg">
+  <div class="text">New <a href="http://arxiv.org/abs/1605.07784">paper</a> on solving robust PCA and matrix completion by non-convex gradient descent.</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="3.jpg">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
+
+</div>
+<br>
+
+<div style="text-align:right">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<h2> About</h2>
+<p style="text-align: justify;">I am a 4th year PhD student in Department of Electrical and Computer Engineering (ECE) at <a href="http://www.utexas.edu/">The University of Texas at Austin</a>. I am advised by <a href="http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html">Constantine Caramanis</a>. I obtained my B.E. from <a href="http://www.tsinghua.edu.cn/publish/newthu/index.html">Tsinghua University</a> in 2012. I have spent two summers as an intern at Google, where I made contributions to Google's recommendation and ads systems.</p>
+<p style="text-align: justify;">My research interests include machine learning, high-dimensional statistics, convex and non-convex optimization. I particularly enjoy developing tractable non-convex algorithms for large scale learning problems.</p>
+
+<p> Email: yixy at utexas dot edu<br><a href="https://scholar.google.com/citations?user=r0c4bz4AAAAJ&hl=en&authuser=1"> Google Scholar</a> </p>
+
+<h2>Papers</h2>
+<ul>
+	<li><p><span style="font-weight: bold;">Fast Algorithms for Robust PCA via Gradient Descent,</span><br>Xinyang Yi, Dohyung Park, Yudong Chen, Constantine Caramanis.<br>
+	Preprint, 2016. <a href="http://arxiv.org/abs/1605.07784">[arxiv]</a>
+	<a href="rpca_gd/RPCA_GD.zip">[code]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">Regularized EM Algorithms: A Unified Framework and Statistical Guarantees,</span><br>Xinyang Yi, Constantine Caramanis.<br>
+	Neural Information Processing Systems Conference (NIPS), 2015.<br><a href="http://arxiv.org/abs/1511.08551">[arxiv]</a>
+	<a href="https://papers.nips.cc/paper/5720-regularized-em-algorithms-a-unified-framework-and-statistical-guarantees">[nips link]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">Optimal Linear Estimation under Unknown Nonlinear Transform,</span><br>Xinyang Yi, Zhaoran Wang, Constantine Caramanis, Han Liu.<br>
+	Neural Information Processing Systems Conference (NIPS), 2015.<br><a href="http://arxiv.org/abs/1505.03257">[arxiv]</a>
+	<a href="https://papers.nips.cc/paper/6013-optimal-linear-estimation-under-unknown-nonlinear-transform">[nips link]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">Binary Embedding: Fundamental Limits and Fast Algorithm,</span><br>Xinyang Yi, Constantine Caramanis, Eric Price.<br>
+	International Conference on Machine Learning (ICML), 2015.<br><a href="http://arxiv.org/abs/1502.05746">[arxiv]</a>
+	<a href="http://www.jmlr.org/proceedings/papers/v37/yi15.html">[icml link]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">Novel Power Grid Reduction Method Based on L1 Regularization,</span><br>Ye Wang, Meng Li, Xinyang Yi, Zhao Song, Constantine Caramanis and Micheal Orshansky.<br>
+	Design Automation Conference (DAC), 2015. <a href="http://ieeexplore.ieee.org/xpl/login.jsp?reload=true&tp=&arnumber=7167277&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7167277">[pdf]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">A Convex
+	Formulation for Mixed Regression with Two Components: Minimax Optimal
+	Rates</span>,<br>
+	Yudong Chen, Xinyang Yi, Constantine Caramanis.<br>
+	Conference on Learning Theory (COLT), 2014. <a href="http://arxiv.org/abs/1312.7006">[arxiv]</a> <a href="http://jmlr.org/proceedings/papers/v35/chen14.pdf">[colt pdf]</a></p>
+	</li>
+
+	<li><p><span style="font-weight: bold;">Alternating Minimization for Mixed Linear Regression</span>,<br>
+	Xinyang Yi, Constantine Caramanis, Sujay Sanghavi.<br>
+	International Conference on Machine Learning (ICML), 2014.<br><a href="http://arxiv.org/abs/1310.3745">[arxiv]</a> <a href="http://jmlr.org/proceedings/papers/v32/yia14.html">[icml link]</a></p>	
+</ul>
+
+<hr>
+
+</div>
+
+<!-- script for slideshow -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>	
 </html>
